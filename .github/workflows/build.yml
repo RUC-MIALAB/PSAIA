@@ -21,10 +21,13 @@ jobs:
       - name: Clone PSAIA repository
         run: |
           git clone https://github.com/RUC-MIALAB/PSAIA.git
+          
 
       - name: Install naccess2.1.1
         run: |
-          cd PSAIA/Program/naccess2.1.1 && csh install.scr
+          cd PSAIA/
+          git clone https://github.com/Stephen523/program.git
+          cd Program/naccess2.1.1 && csh install.scr
 
       - name: Test Results
         run: |
