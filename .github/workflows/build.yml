@@ -29,3 +29,4 @@ jobs:
       - name: Test Results
         run: |
           bash main.sh
+          cat result/*.txt
