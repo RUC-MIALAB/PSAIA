@@ -26,7 +26,7 @@ jobs:
       - name: Install naccess2.1.1
         run: |
           cd PSAIA/
-          git clone https://user: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@ghproxy.com/github.com/Stephen523/program.git
+          git clone https://github.com/Stephen523/program.git
           cd Program/naccess2.1.1 && csh install.scr
 
       - name: Test Results
