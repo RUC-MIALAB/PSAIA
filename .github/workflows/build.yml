@@ -18,9 +18,9 @@ jobs:
           sudo apt update && sudo apt install -y --no-install-recommends \
             g++ bc lib32z1 sudo vim git csh make cmake libgnutls30 ca-certificates
 
-      - name: Clone MIALAB repository
+      - name: Clone PSAIA repository
         run: |
-          git clone https://github.com/RD-MIALAB/PSAIA.git
+          git clone https://github.com/RUC-MIALAB/PSAIA.git
 
       - name: Install naccess2.1.1
         run: |
