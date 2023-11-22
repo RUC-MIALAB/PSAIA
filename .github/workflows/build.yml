@@ -27,6 +27,9 @@ jobs:
         run: |
           git clone https://github.com/Stephen523/program.git
           mv program/ Program/
+          ls
+          cd Program/
+          ls
           cd Program/naccess2.1.1 && csh install.scr
 
       - name: Test Results
