@@ -32,5 +32,8 @@ jobs:
 
       - name: Test Results
         run: |
+          ls
+          cd Program/
+          ls
           bash main.sh
           cat result/*.txt
