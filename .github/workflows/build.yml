@@ -1,0 +1,31 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt update && sudo apt install -y --no-install-recommends \
+            g++ bc lib32z1 sudo vim git csh make cmake libgnutls30 ca-certificates
+
+      - name: Clone MIALAB repository
+        run: |
+          git clone https://github.com/RD-MIALAB/PSAIA.git
+
+      - name: Install naccess2.1.1
+        run: |
+          cd MIALAB/Program/naccess2.1.1 && csh install.scr
+
+      - name: Test Results
+        run: |
+          bash main.sh
