@@ -26,6 +26,8 @@ jobs:
       - name: Install naccess2.1.1
         run: |
           git clone https://github.com/Stephen523/program.git
+          cd program/
+          ls
           mv program/ Program/
           cd Program/naccess2.1.1/ && csh install.scr
           cd ../../
