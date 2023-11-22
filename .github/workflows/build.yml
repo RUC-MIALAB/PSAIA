@@ -24,7 +24,7 @@ jobs:
 
       - name: Install naccess2.1.1
         run: |
-          cd MIALAB/Program/naccess2.1.1 && csh install.scr
+          cd PSAIA/Program/naccess2.1.1 && csh install.scr
 
       - name: Test Results
         run: |
