@@ -39,6 +39,5 @@ jobs:
       - name: Test Results
         run: |
           cd PSAIA/
-          ls
           bash main.sh
           cat result/*.txt
