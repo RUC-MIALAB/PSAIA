@@ -31,13 +31,14 @@ jobs:
           
       - name: Install naccess2.1.1
         run: |
-          mv Program PSAIA/
+          mv Program/ PSAIA/
           cd PSAIA/
           cd Program/naccess2.1.1/ && csh install.scr
           cd ../../
 
       - name: Test Results
         run: |
+          cd PSAIA/
           ls
           bash main.sh
           cat result/*.txt
