@@ -31,8 +31,8 @@ jobs:
           
       - name: Install naccess2.1.1
         run: |
-          ls
-          mv program/Program Program/
+          mv Program PSAIA/
+          cd PSAIA/
           cd Program/naccess2.1.1/ && csh install.scr
           cd ../../
 
