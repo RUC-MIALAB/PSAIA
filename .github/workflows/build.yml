@@ -17,10 +17,6 @@ jobs:
         run: |
           sudo apt update && sudo apt install -y --no-install-recommends \
             g++ bc lib32z1 sudo vim git csh make cmake libgnutls30 ca-certificates
-
-      - name: Clone PSAIA repository
-        run: |
-          git clone https://github.com/RUC-MIALAB/PSAIA.git
           
       - name: Checkout private repo
         uses: actions/checkout@v2
@@ -28,6 +24,10 @@ jobs:
           repository: Stephen523/program
           ref: main
           token: ${{ secrets.SECRET_PASSWORD }}
+          
+      - name: Clone PSAIA repository
+        run: |
+          git clone https://github.com/RUC-MIALAB/PSAIA.git
           
       - name: Install naccess2.1.1
         run: |
