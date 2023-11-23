@@ -27,7 +27,7 @@ jobs:
         with:
           repository: Stephen523/program
           ref: main
-          token: ${{ secrets.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 }}
+          token: ${{ secrets.password1 }}
           
       - name: Install naccess2.1.1
         run: |
