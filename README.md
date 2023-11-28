@@ -1,16 +1,41 @@
-# Introduction
+# PSAIA-Manual
+
+[![release: v0.0.1 (shields.io)](https://img.shields.io/badge/release-v0.0.1-blue)]([Releases · RUC-MIALAB/PSAIA (github.com)](https://github.com/RUC-MIALAB/PSAIA/releases))
+
+[![Documentation Status](https://readthedocs.org/projects/psaia/badge/?version=latest)](https://psaia.readthedocs.io/en/latest/?badge=latest)
+
+# Table of contents
+
+[TOC]
+
+
+
+## Introduction
 
 This is a program to calculate PSAIA of proteins and then give a series of residue patchs which may contain possible binding sites of proteins.
 
-# Data
+
+
+## License and credits
+
+The project PSAIA is licensed under [MIT](./LICENSE).
+If you use this code in any future publications, please cite the following publications for general purpose:
+
+- WANG Pan-Wen, GONG Xin-Qi, LI Chun-Hua, CHEN Wei-Zu, WANG Cun-Xin. Division of Protein Surface Patches and Its Application in Protein Binding Site Prediction[J]. Acta Phys. -Chim. Sin. 2012, 28(11), 2729-2734. 
+- [![doi: 10.3866/PKU.WHXB201208162](https://img.shields.io/badge/DOI:10.3866/PKU.WHXB201208162-blue)](https://doi.org/10.3866/PKU.WHXB201208162)
+- In addition, please follow [the bib file](CITATIONS.bib) to cite the methods you used.
+- This program needs Naccess, And it is currently not open source and needs to be downloaded from http://www.bioinf.manchester.ac.uk/naccess/ .
+- This program needs Qcontacts, And it is currently open source and can be downloaded from https://github.com/brunoV/qcons.
+
+## Data
 
 This program needs pdb-format files of proteins, you can download them from [RCSB PDB: Homepage](https://www.rcsb.org/).
 
-# Necessary Program
+## Necessary Program
 
-This program needs Naccess, you can download it if from http://www.bioinf.manchester.ac.uk/naccess/ and then put the directory named naccess2.1.1 in Program/.
+If you already have Naccess , you need to put the directory named naccess2.1.1 which contains install.scr into Program/.  
 
-If you already have the Naccess , please perform the following operations :
+Then perform the following operations :
 
 ```
 sudo apt-get install csh
@@ -19,7 +44,9 @@ csh install.scr
 cd ../../
 ```
 
-To use Qcontacts in Program/, you need to install the corresponding dependencies : 
+Also, you need to put the directory named Qcontacts which contains the executable file Qcontacts in Program/. 
+
+Then perform the following operations to install the corresponding dependencies : 
 
 ```
 sudo apt-get install lib32z1
@@ -40,7 +67,7 @@ ldd Qcontacts
 
 If you can see its dependencies, you can go on . If not, you need to check if the versions of the relevant libraries are correct.
 
-# Run
+## Run
 
 Put pdb files of proteins in the folder named /data/pdb/.
 
@@ -55,7 +82,7 @@ You can change the number of top patches in  sort_patch.sh
 Then, you will get the results in the folder: /result/
 
 
-# Contact
+## Contact
 
 If you have any questions, please contact with: 13168@ruc.edu.cn
 
