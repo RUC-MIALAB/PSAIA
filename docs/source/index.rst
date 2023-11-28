@@ -26,7 +26,7 @@ PSAIA is a program to calculate PSAIA score of proteins and then predict the bat
    :maxdepth: 3
    :caption: Project Details
    
-   License
+   license
    DevelopingTeam
 
 .. toctree::

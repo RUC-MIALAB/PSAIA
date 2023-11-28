@@ -1,1 +1,0 @@
-The project PSAIA is licensed under MIT.
