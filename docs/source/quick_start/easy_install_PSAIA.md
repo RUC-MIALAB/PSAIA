@@ -15,7 +15,7 @@ Some of these packages can be installed with popular package management system, 
 sudo apt update && sudo apt install -y libopenblas-openmp-dev liblapack-dev libscalapack-mpi-dev libelpa-dev libfftw3-dev libcereal-dev libxc-dev g++ make cmake bc git lib32z1
 ```
 
-Please refer to our [guide]([RUC-MIALAB/PSAIA: This is a program for predicting protein binding sites. (github.com)](https://github.com/RUC-MIALAB/PSAIA)) on requirements.
+Please refer to our [guide](https://github.com/RUC-MIALAB/PSAIA) on requirements.
 
 
 ## Get PSAIA source code
@@ -28,7 +28,7 @@ Of course a copy of PSAIA source code is required, which can be obtained via one
 
 ### Update to latest release
 
-Please check the [release page]([Releases · RUC-MIALAB/PSAIA (github.com)](https://github.com/RUC-MIALAB/PSAIA/releases)) for the release note of a new version.
+Please check the [release page](https://github.com/RUC-MIALAB/PSAIA/releases) for the release note of a new version.
 
 It is OK to download the new source code from beginning following the previous step.
 
