@@ -1,6 +1,6 @@
 # PSAIA-Manual
 
-[![release: v0.0.1 (shields.io)](https://img.shields.io/badge/release-v0.0.1-blue)]([Releases · RUC-MIALAB/PSAIA (github.com)](https://github.com/RUC-MIALAB/PSAIA/releases))
+[![release: v0.0.1 (shields.io)](https://img.shields.io/badge/release-v0.0.1-blue)](https://github.com/RUC-MIALAB/PSAIA/releases)
 
 [![Documentation Status](https://readthedocs.org/projects/psaia/badge/?version=latest)](https://psaia.readthedocs.io/en/latest/?badge=latest)
 
