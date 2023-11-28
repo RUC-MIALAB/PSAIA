@@ -4,9 +4,16 @@
 
 
 
-In order to quickly get started with the PSAIA program, I will demonstrate the entire process using the 1acb.pdb file in data/pdb/ directory as input.
+In order to quickly get started with the PSAIA program, I will demonstrate the entire process using 1acb.pdb which randomly  be downloaded from  [RCSB PDB: Homepage](https://www.rcsb.org/) as input.
 
-You only need to run the following order:
+First, put the '1acb.pdb' into data/pdb/
+
+```
+cd PSAIA/
+cp ../1acb.pdb data/pdb/
+```
+
+Then, you only need to run the following order:
 
 ```
 bash main.sh

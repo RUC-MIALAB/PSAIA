@@ -1,4 +1,0 @@
-urllib3
-myst_parser[linkify]
-sphinx_rtd_theme
-deepmodeling_sphinx
