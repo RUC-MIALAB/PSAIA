@@ -1,39 +1,32 @@
-# To build this Dockerfile, run `docker build -t abacus - < Dockerfile`.
-# Build without cloning the repo by `docker build https://github.com/deepmodeling/abacus-develop.git#develop`,
-#   and optionally choose the Dockerfile in use by appending e.g. `-f Dockerfile.gnu`.
-# Alternatively, pull the image with `docker pull ghcr.io/deepmodeling/abacus:latest`.
-# Also available at `docker pull registry.dp.tech/deepmodeling/abacus:latest`.
+# To build this Dockerfile, run `docker build -t psaia - < Dockerfile`.
 
-# Docker images are aimed for evaluating ABACUS.
-# For production use, please compile ABACUS from source code and run in bare-metal for a better performace.
+# Docker images are aimed for evaluating PSAIA.
+# For production use, please compile PSAIA from source code and run in bare-metal for a better performace.
 
-FROM ubuntu:22.04
+FROM ubuntu:latest
 RUN apt update && apt install -y --no-install-recommends \
-    g++ bc lib32z1 sudo vim git csh make cmake libgnutls30 ca-certificates
-# If you wish to use the LLVM compiler, replace 'g++' above with 'clang libomp-dev'.
+    g++ lib32z1 csh git ca-certificates sudo vim bc
+RUN sudo echo "deb http://dk.archive.ubuntu.com/ubuntu/ bionic main universe" >> /etc/apt/sources.list
+RUN apt install -y gnupg2
+RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
+RUN apt update
+RUN apt-get install -y --no-install-recommends g++-6
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 6
+RUN apt-get install libgfortran3 
 
-#ENV GIT_SSL_NO_VERIFY=true TERM=xterm-256color \
-#    OMPI_ALLOW_RUN_AS_ROOT=1 OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1 OMPI_MCA_btl_vader_single_copy_mechanism=none
+# All the necessary requirements for PSAIA have been installed beforehand.
 
-# This will fetch the latest commit info, and store in docker building cache.
-# If there are newer commits, docker build will ignore the cache and build latest codes.
-#ADD https://api.github.com/repos/deepmodeling/abacus-develop/git/refs/heads/develop /dev/null
 RUN git clone https://github.com/Stephen523/MIALAB.git && \
-    cd MIALAB && \
-    cd Program/naccess2.1.1 && \
-    csh install.scr && \
-    cd ../../
-    #chmod u+x ./main.sh >> results.txt 2>&1
-    #bash main.sh
-    #&& rm -rf abacus-develop
-# If you have trouble cloning repo, replace "github.com" with "gitee.com".
-#CMD mpirun --use-hwthread-cpus abacus
+    cd MIALAB/
 
-# To run ABACUS built by this image with all available threads, execute `docker run -v <host>:<wd> -w <wd/input> abacus:latest`.
-# Replace '<host>' with the path to all files(including pseudopotential files), '<wd>' with a path to working directory, and '<wd/input>' with the path to input folder(containing 'INPUT', 'STRU', etc.).
-# e.g. after cloning the repo to `$HOME` and pulling image, execute `docker run -v ~/abacus-develop/tests/integrate:/workspace -w /workspace/101_PW_15_f_pseudopots abacus:latest`.
-# To run ABACUS with a given MPI process number, execute `docker run -v <host>:<wd> -w <wd/input> -it --entrypoint mpirun abacus:latest -np <processes> abacus`.
-# Note: It would be better using all available CPUs. Docker uses CFS to share the CPU resources, which will result in bad CPU affinity.
+RUN cd MIALAB/ && \ 
+    chmod u+x main.sh
+CMD cd MIALAB/ && ./main.sh
+# To run ABACUS built by this image with all available threads, execute `docker run -v <host>:<wd> -w <wd/input> psaia`.
+# Replace '<host>' with the path to pdb file's directory, '<wd>' with a path to working directory.
+# e.g. after cloning the repo to `$HOME` and pulling image, execute docker run -v ~/PSAIA/data/pdb/:/MIALAB/data/pdb/ psaia
+# Then,you can download the result directory or files to the place you specify.execute 'docker cp <container id>:<wd> <host>'
+# e.g. docker cp a33200255e8b:/MIALAB/result/ ~/PSAIA/result/.
 
-# To use this image as developing environment, execute `docker run -it --entrypoint /bin/bash abacus`.
+# To use this image as developing environment, execute `docker run -it --entrypoint /bin/bash psaia`.
 # Please refer to https://docs.docker.com/engine/reference/commandline/run/ for more details.
