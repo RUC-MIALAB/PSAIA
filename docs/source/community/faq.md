@@ -24,6 +24,6 @@ Yes,you just need to put the pdb files into data/pdb/.
 
 **1. Why can't I use Naccess or Qcontacts?**
 
-You need to first check if you have followed the instructions about Naccess in the [PSAIA-README](https://github.com/RUC-MIALAB/PSAIA/blob/main/README.md). If following the document instructions still doesn't work, please contact the [PSAIA developer](13168@ruc.edu.cn).
+You need to first check if you have followed the instructions about Naccess in the [PSAIA-README](https://github.com/RUC-MIALAB/PSAIA/blob/main/README.md). If following the document instructions still doesn't work, please contact the [PSAIA developer](13168zsl@ruc.edu.cn).
 
 [back to top](#frequently-asked-questions)

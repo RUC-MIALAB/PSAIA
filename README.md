@@ -89,7 +89,7 @@ Then, you will get the results in the folder: /result/
 
 ## Contact
 
-If you have any questions, please contact with: 13168@ruc.edu.cn
+If you have any questions, please contact with: 13168zsl@ruc.edu.cn
 
 
 
