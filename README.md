@@ -7,6 +7,7 @@
 # Table of contents
 
 - [Introduction](#introduction)
+- [Web Server](#web-server)
 - [License and credits](#license-and-credits)
 - [Data](#data)
 - [Necessary Program](#necessary-program)
@@ -20,6 +21,12 @@
 This is a program to calculate PSAIA of proteins and then give a series of residue patchs which may contain possible binding sites of proteins.
 
 
+
+## Web Server
+
+We have made an online server where you can upload data and get results through PSAIA. The server's link is provided here:
+
+[PSAIA-Server](http://127.0.0.1:7860/)
 
 ## License and credits
 
