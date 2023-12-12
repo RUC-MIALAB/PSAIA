@@ -7,6 +7,7 @@
 # Table of contents
 
 - [Introduction](#introduction)
+- [Detailed Document](#detailed-document)
 - [Web Server](#web-server)
 - [License and credits](#license-and-credits)
 - [Data](#data)
