@@ -18,9 +18,13 @@
 
 ## Introduction
 
-This is a program to calculate PSAIA of proteins and then give a series of residue patchs which may contain possible binding sites of proteins.
+This is a program to calculate PSAIA of proteins and then give a series of residue patchs which may contain binding sites of proteins.
 
+## Detailed Document
 
+To make it more convenient to use and understand the details of PSAIA, we have prepared a comprehensive documentation for PSAIA.
+
+[PSAIA-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest)
 
 ## Web Server
 
@@ -77,7 +81,7 @@ cd Program/Qcontacts
 ldd Qcontacts
 ```
 
-If you can see its dependencies, you can go on . If not, you need to check if the versions of the relevant libraries are correct.
+If you can see its dependencies, you can go on. If not, you need to check if the versions of the relevant libraries are correct.
 
 ## Run
 
@@ -92,6 +96,8 @@ bash main.sh
 You can change the number of top patches in  sort_patch.sh
 
 Then, you will get the results in the folder: /result/
+
+If you want to know how to read the result file, please refer to this [PSAIA-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest) .
 
 
 ## Contact

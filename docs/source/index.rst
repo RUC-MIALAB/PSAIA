@@ -7,13 +7,14 @@
 PSAIA Documentation
 =================================================
 
-PSAIA is a program to calculate PSAIA score of proteins and then predict the batch of possible binding sites of proteins.
+PSAIA is a program to calculate PSAIA of proteins and then give a series of residue patchs which may contain binding sites of proteins.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Quick Start
 
    quick_start/easy_install_PSAIA
+   quick_start/How_to_Read_the_results
    quick_start/hands_on_PSAIA
 
 .. toctree::
