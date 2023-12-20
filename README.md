@@ -27,15 +27,11 @@
 
 ## Detailed Document
 
-To make it more convenient to use and understand the details of PSAIA, we have prepared a comprehensive documentation for PSAIA.
-
-[PSAIA-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest)
+To make it more convenient to use and understand the details of PSAIA, we have prepared a comprehensive documentation for PSAIA.[PSAIA-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest)
 
 ## Web Server
 
-We have made an online server where you can upload data and get results through PSAIA. The server's link is provided here:
-
-[PSAIA-Server](http://mialab.ruc.edu.cn/PSAIAServer/)
+We have made an online server where you can upload data and get results through PSAIA. The server's link is provided here:[PSAIA-Server](http://mialab.ruc.edu.cn/PSAIAServer/)
 
 ## License and credits
 
