@@ -4,7 +4,7 @@
 
 
 
-In order to quickly get started with the PSAIA program, I will demonstrate the entire process using 1acb.pdb which randomly  be downloaded from  [RCSB PDB: Homepage](https://www.rcsb.org/) as input.
+In order to quickly get started with the PSAIA program, I will demonstrate the entire process using 1acb.pdb which randomly be downloaded from  [RCSB PDB: Homepage](https://www.rcsb.org/) as input.
 
 First, put the '1acb.pdb' into data/pdb/
 
