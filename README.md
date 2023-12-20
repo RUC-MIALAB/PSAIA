@@ -35,7 +35,7 @@ To make it more convenient to use and understand the details of PSAIA, we have p
 
 We have made an online server where you can upload data and get results through PSAIA. The server's link is provided here:
 
-[PSAIA-Server]([PSAIA Server (ruc.edu.cn)](http://mialab.ruc.edu.cn/PSAIAServer/))
+[PSAIA-Server](http://mialab.ruc.edu.cn/PSAIAServer/)
 
 ## License and credits
 
