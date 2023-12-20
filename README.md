@@ -19,7 +19,11 @@
 
 ## Introduction
 
-This is a program to calculate PSAIA of proteins and then give a series of residue patchs which may contain binding sites of proteins.
+**Division of Protein Surface Patches and Its Application in Protein Binding Site Prediction**, WANG Pan-Wen, GONG Xin-Qi, LI Chun-Hua, CHEN Wei-Zu, WANG Cun-Xin. [[Paper]](https://doi.org/10.3866/PKU.WHXB201208162)
+
+![Introduction](C:\Users\Administrator\Desktop\PSAIA\PSAIA\paper_first.png)
+
+**Abstract:** Binding site prediction for protein-protein complexes is a challenging problem in the area of computational molecular biology. Using a set of double-chain complexes in Benchmark 3.0, we calculated the solvent accessible surface areas and inter-residue contact areas for each monomer and propose a division method of protein surface patches. We found that the products of the solvent accessible surface areas and internal contact areas of patches, the PSAIA values, could provide protein binding site information. In a dataset of 78 complexes, either receptors or ligands of 74 complexes had interface patches with the first or second greatest PSAIA values among all surface patches. A good docking result was achieved when the binding site information obtained with this method was applied in Target 39 of the CAPRI experiment. This patch-based protein binding site prediction method differs from traditional methods, which are based on single residue and consider only surface residues. This provides a new method for binding site prediction in protein-protein interactions.
 
 ## Detailed Document
 
@@ -31,7 +35,7 @@ To make it more convenient to use and understand the details of PSAIA, we have p
 
 We have made an online server where you can upload data and get results through PSAIA. The server's link is provided here:
 
-[PSAIA-Server](http://127.0.0.1:7860/)
+[PSAIA-Server]([PSAIA Server (ruc.edu.cn)](http://mialab.ruc.edu.cn/PSAIAServer/))
 
 ## License and credits
 
@@ -46,7 +50,7 @@ If you use this code in any future publications, please cite the following publi
 
 ## Data
 
-This program needs pdb-format files of proteins, you can download them from [RCSB PDB: Homepage](https://www.rcsb.org/).
+This program needs pdb-format files of double-chain proteins, you can download them from [RCSB PDB: Homepage](https://www.rcsb.org/).
 
 ## Necessary Program
 
