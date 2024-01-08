@@ -50,6 +50,8 @@ This program needs pdb-format files of double-chain proteins, you can download t
 
 ## Necessary Program
 
+
+
 If you already have Naccess , you need to put the directory named naccess2.1.1 which contains install.scr into Program/.  
 
 Then perform the following operations :
@@ -83,6 +85,8 @@ ldd Qcontacts
 ```
 
 If you can see its dependencies, you can go on. If not, you need to check if the versions of the relevant libraries are correct.
+
+Also, If you would like to learn more about the detailed configuration of the software, please refer to this documentation. [Easy Installation — PSAIA](https://psaia.readthedocs.io/en/latest/quick_start/easy_install_PSAIA.html#requirements)
 
 ## Run
 
