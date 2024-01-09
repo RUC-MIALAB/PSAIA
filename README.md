@@ -46,7 +46,7 @@ If you use this code in any future publications, please cite the following publi
 
 ## Data
 
-This program needs pdb-format files of double-chain proteins, you can download them from [RCSB PDB: Homepage](https://www.rcsb.org/).
+This program needs pdb-format files of proteins, you can download them from [RCSB PDB: Homepage](https://www.rcsb.org/).
 
 ## Requirements
 
