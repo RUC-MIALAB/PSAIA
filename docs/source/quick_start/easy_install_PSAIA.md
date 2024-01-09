@@ -20,7 +20,7 @@ sudo apt update && apt install -y --no-install-recommends \
 
 If your system is already able to run the software at this point, there is no need to continue running further.  However, if it is not working yet, you will need to follow the steps below to configure the necessary environment for the software.
 
-Due to the requirement of libgfortran3 by PSAIA, we need to install the g++ -6  that it requires. Meanwhile, g++ -6 also requires the prerequisite software gnupg2,  you can follow these steps below to download them:
+Due to the requirement of libgfortran3 by PSAIA, we need to install the g++-6  that it requires. Meanwhile, g++-6 also requires the prerequisite software gnupg2,  you can follow these steps below to download them:
 
 ```
 sudo echo "deb http://dk.archive.ubuntu.com/ubuntu/ bionic main universe" >> /etc/apt/sources.list

@@ -14,8 +14,8 @@ PSAIA is a program to calculate PSAIA of proteins and then give a series of resi
    :caption: Quick Start
 
    quick_start/easy_install_PSAIA
-   quick_start/How_to_Read_the_results
    quick_start/hands_on_PSAIA
+   quick_start/How_to_Read_the_results
 
 .. toctree::
    :maxdepth: 2

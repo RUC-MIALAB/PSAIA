@@ -102,7 +102,7 @@ You can change the number of top patches in  sort_patch.sh
 
 Then, you will get the results in the folder: /result/
 
-If you want to know how to read the result file, please refer to this [PSAIA-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest) .
+If you want to know how to read the result file, please refer to this [PSAIA-result](https://psaia.readthedocs.io/en/latest/quick_start/How_to_Read_the_results.html) .
 
 
 ## Contact
