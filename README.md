@@ -11,7 +11,7 @@
 - [Web Server](#web-server)
 - [License and credits](#license-and-credits)
 - [Data](#data)
-- [Necessary Program](#necessary-program)
+- [Requirements](#requirements)
 - [Run](#run)
 - [Contact](#contact)
 
@@ -27,11 +27,11 @@
 
 ## Detailed Document
 
-To make it more convenient to use and understand the details of PSAIA, we have prepared a comprehensive documentation for PSAIA.[PSAIA-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest)
+To make it more convenient to use and understand the details of PSAIA, we have prepared a comprehensive documentation for PSAIA. [PSAIA-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest)
 
 ## Web Server
 
-We have made an online server where you can upload data and get results through PSAIA. The server's link is provided here:[PSAIA-Server](http://mialab.ruc.edu.cn/PSAIAServer/)
+We have made an online server where you can upload data and get results through PSAIA. The server's link is provided here: [PSAIA-Server](http://mialab.ruc.edu.cn/PSAIAServer/)
 
 ## License and credits
 
@@ -46,9 +46,9 @@ If you use this code in any future publications, please cite the following publi
 
 ## Data
 
-This program needs pdb-format files of proteins, you can download them from [RCSB PDB: Homepage](https://www.rcsb.org/).
+This program needs pdb-format files of double-chain proteins, you can download them from [RCSB PDB: Homepage](https://www.rcsb.org/).
 
-## Necessary Program
+## Requirements
 
 
 
